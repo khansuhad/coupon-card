@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <!-- tailwind Css and daisyui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class="bg-red-400 h-[14vh] flex justify-center items-center">
+    <h1 class="text-5xl text-center">Wow Wow <span class="font-semibold text-white">discount</span> !!! hurreh !</h1>
+  </header>
+  <main class=" h-[80vh]  w-screen flex  flex-col justify-center  items-center bg-red-200">
+    <section>
+        <h1 class="text-2xl text-center mx-auto">For 30% Discount , you need coupon code</h1>
+    </section>
+    <section class="bg-red-100 p-10 rounded">
+     <label for="coupon" class=" text-3xl">Total Amount: <span id="total-amount">10000</span> </label> <br>
+     <input type="text" id="coupon-number" placeholder="Enter coupon code here...." class="input input-bordered input-info  lg:w-96 mt-3 " /> <br>
+     <!-- The button to open modal -->
+<label for="my_modal_6" class="btn btn-error mt-4" id="apply-button">Apply</label>
+<label for="my_modal_2" class="btn btn-error mt-4" id="pay-button"> Pay </label>
+
+
+<input type="checkbox" id="my_modal_6" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    
+    <p class="py-4 font-medium" id="return-apply-message"></p>
+    <div class="modal-action">
+      <label for="my_modal_6" class="btn">Close!</label>
+    </div>
+  </div>
+</div>
+<input type="checkbox" id="my_modal_2" class="modal-toggle" />
+<div class="modal">
+  <div class="modal-box">
+    
+    <p class="py-4 font-medium" id="return-pay-message"></p>
+    <div class="modal-action">
+      <label for="my_modal_2" class="btn">Close!</label>
+    </div>
+  </div>
+</div>
+    </section>
+ </main>
+ <footer class="h-[6vh] bg-red-500 flex justify-center items-center">
+    <h1 class="text-center font-medium text-1xl">Copyright @ reserved by <a href="https://www.facebook.com/profile.php?id=100092229053409" target="_blank">khan suhad</a></h1>
+</footer>
+  <script src="js/apply.js"></script>
+  <script src="js/pay.js"></script>
+</body>
+</html>
